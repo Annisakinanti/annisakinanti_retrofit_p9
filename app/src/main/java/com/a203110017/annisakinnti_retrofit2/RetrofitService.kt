@@ -4,7 +4,7 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
-
+// TODO 6: Bagian untuk request ke webservice
 interface RetrofitService {
 // mengambil list movie dalam format JSON
     @GET("movielist.json")
@@ -15,6 +15,7 @@ interface RetrofitService {
         // menginisialisasi RetrofitService
         var retrofitService: RetrofitService? = null
 
+        // TODO 7: Bagian untuk request ke webservice
         fun getInstance() : RetrofitService {
 // jika RetrofitService tidak bernilai, maka fungsi ini akan dijalankan
             if (retrofitService == null) {

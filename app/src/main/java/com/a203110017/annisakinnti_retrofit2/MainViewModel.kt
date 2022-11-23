@@ -6,6 +6,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+// TODO 4: Class ViewModel
 // memproses data yang di dapatkan dari UI dan di kembalikan lagi ke UI
 class MainViewModel constructor(private val repository: MainRepository)  : ViewModel() {
 
@@ -16,6 +17,7 @@ class MainViewModel constructor(private val repository: MainRepository)  : ViewM
     // untuk megambil data semua movie
     fun getAllMovies() {
 
+        // TODO 9: Bagian untuk menampilkan gambar
         // mengambil repository semua list movie
         val response = repository.getAllMovies()
         // mengirimkan request callback list movie

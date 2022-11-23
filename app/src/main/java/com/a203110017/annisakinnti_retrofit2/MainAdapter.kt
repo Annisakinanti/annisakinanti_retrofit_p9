@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.a203110017.annisakinnti_retrofit2.databinding.AdapterMovieBinding
 
+// TODO 3: Class Adapter
 class MainAdapter: RecyclerView.Adapter<MainViewHolder>() {
 
     // mengembalikan mutablelist movie
@@ -29,7 +30,6 @@ class MainAdapter: RecyclerView.Adapter<MainViewHolder>() {
         val movie = movies[position]
        holder.binding.name.text = movie.name
         Glide.with(holder.itemView.context).load(movie.imageUrl).into(holder.binding.imageview)
-
     }
 
     // menghitung jumlah movie

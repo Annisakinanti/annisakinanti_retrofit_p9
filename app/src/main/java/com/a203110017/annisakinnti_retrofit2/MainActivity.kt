@@ -6,7 +6,7 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.a203110017.annisakinnti_retrofit2.databinding.ActivityMainBinding
-
+// TODO 1: Class View (Activity/Fragment)
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
     private lateinit var binding: ActivityMainBinding
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         viewModel = ViewModelProvider(this, MyViewModelFactory(MainRepository(retrofitService))).get(MainViewModel::class.java)
-
+// TODO 2: Bagian Recyclerview
         binding.recyclerview.adapter = adapter
 
         viewModel.movieList.observe(this, Observer {

@@ -10,7 +10,7 @@ class MyViewModelFactory constructor(private val repository: MainRepository): Vi
         return if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
             MainViewModel(this.repository) as T
         } else {
-            throw IllegalArgumentException("ViewModel Not Found")
+            throw IllegalArgumentException("ViewModel Tidak Ditemukan!")
         }
     }
 }
